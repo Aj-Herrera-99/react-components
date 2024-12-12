@@ -11,11 +11,11 @@ function Card({ titolo, contenuto, immagine }) {
                     <img
                         className="h-full object-cover"
                         src={immagine}
-                        alt=""
+                        alt={titolo}
                     />
                 </div>
                 <div className="h-2/5 p-3 flex flex-col justify-between items-start gap-2">
-                    <div className="line-clamp-5 text-left">
+                    <div className="line-clamp-5">
                         <h2 className="text-lg font-semibold">{titolo}</h2>
                         <p className="my-2 leading-5">{contenuto}</p>
                     </div>
