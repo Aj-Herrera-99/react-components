@@ -14,9 +14,9 @@ function Card({ titolo, contenuto, immagine }) {
                 />
             </div>
             <div className="h-2/5 p-3 flex flex-col justify-between items-start gap-2">
-                <div className="line-clamp-5">
+                <div>
                     <h2 className="text-lg font-semibold">{titolo}</h2>
-                    <p className="my-2 leading-5">{contenuto}</p>
+                    <p className="hidden sm:block my-1 leading-5">{contenuto}</p>
                 </div>
                 <Badge />
             </div>
