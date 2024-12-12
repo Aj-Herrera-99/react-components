@@ -1,7 +1,7 @@
 import Badge from "./Badge";
-import style from "./Card.module.css"
+import style from "./Card.module.css";
 
-function Card() {
+function Card({ titolo, contenuto, immagine }) {
     return (
         <>
             <div
@@ -10,19 +10,15 @@ function Card() {
                 <div className="h-3/5">
                     <img
                         className="h-full object-cover"
-                        src="/public/blog.png"
+                        src={immagine}
                         alt=""
                     />
                 </div>
-                <div className="h-2/5 p-3 flex flex-col justify-between gap-2">
-                    <div className="line-clamp-5">
-                        <h2>Titolo del Post</h2>
+                <div className="h-2/5 p-3 flex flex-col justify-between items-start gap-2">
+                    <div className="line-clamp-5 text-left">
+                        <h2 className="text-lg font-semibold">{titolo}</h2>
                         <p className="my-2 leading-5">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Earum doloremque repudiandae ut, rerum est
-                            incidunt non, officia corporis ab ipsum autem quam?
-                            Blanditiis atque, cum tempore explicabo sapiente
-                            officiis quo?
+                            {contenuto}
                         </p>
                     </div>
                     <Badge />
