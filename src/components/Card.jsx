@@ -3,8 +3,10 @@ import Badge from "./Badge";
 function Card() {
     return (
         <>
-            <h1>Card</h1>
-            <Badge/>
+            <div className="bg-green-300">
+                <h1>Card</h1>
+                <Badge />
+            </div>
         </>
     );
 }
