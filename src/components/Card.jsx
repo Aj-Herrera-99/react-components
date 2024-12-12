@@ -5,7 +5,7 @@ function Card() {
     return (
         <>
             <div
-                className={`${style.card} shadow-lg shadow-stone-500 bg-white rounded-xl overflow-hidden max-w-[80vw] sm:max-w-[50vw] lg:max-w-[400px] `}
+                className={`${style.card} shadow-lg shadow-stone-500 bg-white rounded-xl overflow-hidden max-w-[80vw] sm:max-w-[50vw] lg:max-w-[350px] `}
             >
                 <div className="h-3/5">
                     <img
