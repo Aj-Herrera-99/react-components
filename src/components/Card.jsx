@@ -5,7 +5,7 @@ function Card({ titolo, contenuto, immagine }) {
     return (
         <>
             <div
-                className={`${style.card} shadow-lg shadow-stone-500 bg-white rounded-xl overflow-hidden max-w-[80vw] sm:max-w-[50vw] lg:max-w-[350px] hover:scale-110 hover:rotate-6 hover:shadow-xl hover:shadow-zinc-700 transition-all`}
+                className={`${style.card} shadow-lg shadow-stone-500 bg-white rounded-xl overflow-hidden max-w-[75vw] sm:max-w-[36vw] lg:max-w-[325px] hover:scale-110 hover:rotate-6 hover:shadow-xl hover:shadow-zinc-700 transition-all`}
             >
                 <div className="h-3/5">
                     <img
