@@ -3,11 +3,11 @@ import { foods } from "../data/foods";
 
 function Main({ titolo }) {
     return (
-        <main className="min-h-[85vh] p-5  bg-stone-300">
-            <h1 className="text-center text-4xl font-semibold mb-5">
+        <main className="min-h-[85vh] p-5 bg-stone-300">
+            <h1 className="text-center text-4xl font-semibold mb-3">
                 {titolo}
             </h1>
-            <div className="flex flex-wrap w-3/4 xl:w-3/5 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-3/4 xl:w-3/5 mx-auto">
                 {foods.map((food) => (
                     <Card
                         key={food.id}
