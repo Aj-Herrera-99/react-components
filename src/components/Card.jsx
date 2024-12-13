@@ -18,28 +18,23 @@ function Card({ titolo, contenuto, immagine }) {
     return (
         <div
             onClick={handleCardClick}
-            className={`bg-white rounded-xl mx-2 my-4 overflow-hidden cursor-pointer shadow-lg shadow-stone-500  hover:scale-110 hover:rotate-6 hover:shadow-xl hover:shadow-zinc-700 transition-all ${
+            className={`bg-white flex flex-col rounded-xl overflow-hidden cursor-pointer shadow-lg shadow-stone-500  hover:scale-110 hover:rotate-6 hover:shadow-xl hover:shadow-zinc-700 transition-all ${
                 modal && modalClass
             }`}
         >
-            <div className="h-3/5 w-full">
+            <div>
                 <img
-                    className="h-full w-full object-cover"
                     src={immagine}
                     alt={titolo}
                     loading="lazy"
                 />
             </div>
-            <div className="h-2/5 px-3 py-2 flex flex-col justify-between items-start gap-1">
+            <div className="grow px-3 py-2 flex flex-col justify-between items-start gap-1">
                 <div>
-                    <div className="line-clamp-1">
-                        <h2 className="text-lg font-semibold">{titolo}</h2>
-                    </div>
-                    <div className="line-clamp-1 ">
-                        <p className="hidden md:block my-1 leading-5">
-                            {contenuto}
-                        </p>
-                    </div>
+                    <h2 className="text-lg font-semibold">{titolo}</h2>
+                    <p className="hidden md:block my-1 leading-5">
+                        {contenuto}
+                    </p>
                 </div>
                 <Badge />
             </div>
