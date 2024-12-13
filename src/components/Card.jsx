@@ -13,7 +13,7 @@ function Card({ titolo, contenuto, immagine }) {
 
     // classes
     const modalClass =
-        "fixed w-[70vw] sm:w-[50vw] lg:w-[25vw] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-52 z-20";
+        "fixed w-[70vw] sm:w-[50vw] lg:w-[25vw] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20";
 
     return (
         <div
