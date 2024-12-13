@@ -9,7 +9,7 @@ export const foods = [
     {
         id: 2,
         titolo: "Cracker di barbabietola",
-        contenuto: "Descrizione dei cracker di barbabietola",
+        contenuto: "Descrizione dei cracker di barbabietola obibpibpbp uoihpbphphpijp boipibpbp",
         immagine: "images/cracker_barbabietola.jpeg",
         tags: ["snack", "salato"],
     },
