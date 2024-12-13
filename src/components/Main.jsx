@@ -7,7 +7,7 @@ function Main({ titolo }) {
             <h1 className="text-center text-4xl font-semibold mb-5">
                 {titolo}
             </h1>
-            <div className="flex flex-wrap w-3/4 mx-auto">
+            <div className="flex flex-wrap w-3/4 xl:w-3/5 mx-auto">
                 {foods.map((food) => (
                     <Card
                         key={food.id}
